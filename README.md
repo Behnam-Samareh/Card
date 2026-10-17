@@ -1,1 +1,107 @@
-# Card
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Behnam Samareh | Smart Business Card</title>
+    <!-- Font Awesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; }
+        body { 
+            background: #0f172a; 
+            color: #f8fafc; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            min-height: 100vh; 
+            padding: 20px; 
+        }
+        .card { 
+            background: #1e293b; 
+            border-radius: 24px; 
+            width: 100%; 
+            max-width: 380px; 
+            padding: 35px 24px; 
+            text-align: center; 
+            box-shadow: 0 20px 30px rgba(0,0,0,0.5); 
+            border: 1px solid #334155; 
+        }
+        .avatar { 
+            width: 110px; 
+            height: 110px; 
+            border-radius: 50%; 
+            border: 4px solid #38bdf8; 
+            margin-bottom: 16px; 
+            object-fit: cover; 
+            box-shadow: 0 0 20px rgba(56, 189, 248, 0.3);
+        }
+        h1 { font-size: 1.6rem; margin-bottom: 6px; color: #fff; font-weight: 700; }
+        p.subtitle { color: #38bdf8; font-size: 0.95rem; margin-bottom: 24px; font-weight: 600; }
+        
+        .links { display: flex; flex-direction: column; gap: 14px; }
+        
+        .btn { 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            gap: 12px; 
+            padding: 14px; 
+            border-radius: 14px; 
+            text-decoration: none; 
+            font-weight: 600; 
+            font-size: 1rem; 
+            transition: all 0.2s ease; 
+            color: #fff; 
+            background: #334155; 
+        }
+        .btn:active { transform: scale(0.98); }
+        .btn-save { background: #0284c7; }
+        .btn-save:hover { background: #0369a1; }
+        .btn-call { background: #16a34a; }
+        .btn-telegram { background: #229ed9; }
+        .btn-group { background: #0088cc; }
+        .btn-instagram { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
+
+        .btn i { font-size: 1.2rem; }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <!-- Your GitHub Avatar -->
+        <img src="https://github.com/behnam9013.png" alt="Behnam Samareh" class="avatar">
+        
+        <h1>Behnam Samareh</h1>
+        <p class="subtitle">Graphic Designer | Web Developer | BaniPixel</p>
+
+        <div class="links">
+            <!-- Save Contact Button -->
+            <a href="data:text/vcard;charset=utf-8,BEGIN%3AVCARD%0AVERSION%3A3.0%0AN%3ASamareh%3BBehnam%0AFN%3ABehnam%20Samareh%0ATEL%3BTYPE%3DCELL%3A%2B989136171105%0AEND%3AVCARD" download="Behnam_Samareh.vcf" class="btn btn-save">
+                <i class="fas fa-user-plus"></i> Save Contact
+            </a>
+
+            <!-- Phone Call -->
+            <a href="tel:+989136171105" class="btn btn-call">
+                <i class="fas fa-phone"></i> Direct Call
+            </a>
+
+            <!-- Telegram Profile -->
+            <a href="https://t.me/hisbesa" class="btn btn-telegram" target="_blank">
+                <i class="fab fa-telegram-plane"></i> Telegram
+            </a>
+
+            <!-- Telegram Group -->
+            <a href="https://t.me/+Qv5dVLQdibYzMzhk" class="btn btn-group" target="_blank">
+                <i class="fas fa-users"></i> Telegram Group
+            </a>
+
+            <!-- Instagram -->
+            <a href="https://instagram.com/pusbat" class="btn btn-instagram" target="_blank">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
